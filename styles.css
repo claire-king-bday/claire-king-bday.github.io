@@ -1,0 +1,81 @@
+body {
+    background-color:#f074bd;
+    font-family: monospace;
+    
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    /* padding: 1px; */
+}
+
+main {
+     /* centers the text inside the box */
+    text-align: center;
+    padding: 1px 40px; /* reduce top/bottom padding, keep side padding */
+    width: min(700px, 90vw);
+    height: 550px;
+    /* centers the box itself */
+    margin: 0 auto; 
+
+    /* Makes main the reference point for freeform images */
+    position: relative;
+}
+
+.page {
+    position: relative;
+}
+
+.photo {
+    position: absolute; /* relative to the main section */
+}
+
+.freephoto {
+    position: absolute; /* relative to the page container */
+}
+
+/* apparently you have to set the relative position, (ex the section), then set the photo to absolute position? */
+
+main img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* main img: means select images inside <main>
+   max-width: image can never be wider than its container 
+   height: preserve the image's proportions */
+
+/* h1, h2, h3 {
+    margin: 2px 0;
+    line-height: 1.5;
+} */
+
+h1 {
+    font-size: 50px;
+    /* font-weight: normal; */
+    /* font-family: "Irish Grover", cursive; */
+}
+
+h2 {
+    font-size: 30px;
+    /* font-weight: normal; */
+    /* font-family: "Irish Grover", cursive; */
+}
+
+h3 {
+    font-size: 35px;
+    /* font-weight: normal; */
+    /* font-family: "Irish Grover", cursive; */
+}
+
+p {
+    font-size: 19px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+}
