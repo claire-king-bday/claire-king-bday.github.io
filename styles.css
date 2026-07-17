@@ -17,7 +17,7 @@ main {
     text-align: center;
     padding: 1px 40px; /* reduce top/bottom padding, keep side padding */
     width: min(700px, 90vw);
-    height: 550px;
+    /* height: 550px; */
     /* centers the box itself */
     margin: 0 auto; 
 
@@ -27,6 +27,15 @@ main {
 
 .page {
     position: relative;
+}
+
+@media (max-width: 480px) {
+    .freephoto {
+        width: 30px;
+    }
+    .photo {
+        width: 100px;
+    }
 }
 
 .photo {
